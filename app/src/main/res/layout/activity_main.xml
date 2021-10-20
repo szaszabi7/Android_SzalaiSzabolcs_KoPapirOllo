@@ -8,6 +8,14 @@
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Döntetlek száma: 0"
+        android:textSize="25sp"
+        android:id="@+id/textViewDontetlen"
+        android:layout_marginTop="20sp"/>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -83,7 +91,6 @@
             android:layout_height="wrap_content"
             android:text="Olló"
             android:id="@+id/gombOllo"/>
-
     </LinearLayout>
 
 
