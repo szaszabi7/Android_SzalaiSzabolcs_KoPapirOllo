@@ -49,7 +49,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ember: 0 "
+            android:text="Ember: 0"
             android:textSize="25sp"
             android:id="@+id/textEmberEredmeny"/>
 
@@ -58,7 +58,8 @@
             android:layout_height="wrap_content"
             android:text="Gép: 0"
             android:textSize="25sp"
-            android:id="@+id/textGepEredmeny"/>
+            android:id="@+id/textGepEredmeny"
+            android:layout_marginLeft="10sp"/>
     </LinearLayout>
 
     <LinearLayout
