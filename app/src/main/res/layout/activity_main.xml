@@ -8,6 +8,76 @@
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/heart2"
+                android:id="@+id/gepHp1"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/heart2"
+                android:id="@+id/gepHp2"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/heart2"
+                android:id="@+id/gepHp3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gép"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Játékos"
+                android:textSize="30sp"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/heart2"
+                android:id="@+id/jatekosHp1"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/heart2"
+                android:id="@+id/jatekosHp2"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/heart2"
+                android:id="@+id/jatekosHp3"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,7 +111,7 @@
         android:textSize="25sp"
         android:layout_marginBottom="20sp"/>
 
-    <LinearLayout
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -68,29 +138,34 @@
             android:textSize="25sp"
             android:id="@+id/textGepEredmeny"
             android:layout_marginLeft="10sp"/>
-    </LinearLayout>
+    </LinearLayout>-->
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_horizontal">
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/gombKo"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Kő"
-            android:id="@+id/gombKo"/>
+            android:layout_weight="1"
+            android:background="@drawable/rock" />
+
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/gombPapir"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Papír"
-            android:id="@+id/gombPapir"/>
+            android:layout_weight="1"
+            android:background="@drawable/paper" />
+
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Olló"
-            android:id="@+id/gombOllo"/>
+            android:id="@+id/gombOllo"
+            android:background="@drawable/scissors"
+            android:layout_weight="1"/>
     </LinearLayout>
 
 
